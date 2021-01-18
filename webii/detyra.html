@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta name="viewport" content="width=device-width, inital-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+        integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
+        crossorigin="anonymous"></script>
+    <title>Detyra</title>
+    <style>
+        form#kerkim{
+    position: relative;
+    top: 50%;
+    transition: all 1s;
+    width: 50px;
+    height: 50px;
+    background: white;
+    box-sizing: border-box;
+    border-radius: 25px;
+    border: 4px solid white;
+    padding: 5px;
+}
+
+input#search{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;;
+    height: 42.5px;
+    line-height: 30px;
+    outline: 0;
+    border: 0;
+    display: none;
+    font-size: 1em;
+    border-radius: 20px;
+    padding: 0 20px;
+}
+
+.fa{
+    box-sizing: border-box;
+    padding: 10px;
+    width: 42.5px;
+    height: 42.5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    color: #07051a;
+    text-align: center;
+    font-size: 1.2em;
+    transition: all 1s;
+}
+
+#kerkim:hover{
+    width: 200px;
+    cursor: pointer;
+}
+
+#kerkim:hover input#search{
+    display: block;
+}
+
+#kerkim:hover .fa{
+    background: #07051a;
+    color: white;
+}
+    </style>
+</head>
+
+<body style="background-color: rgb(21, 52, 53);">
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #000000;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="detyra.html"><img src="images/movie2.png" alt="foto" width="50px"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="detyra.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+                <form id="kerkim" action="">
+                    <input id="search" type="search">
+                    <i class="fa fa-search"></i>
+                </form>
+                
+            </div>
+        </div>
+    </nav>
+
+    <!--Caroussel-->
+
+    <div class="container">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/parasite.jpg" width="700px" height="600px" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="images/me-before-you.jpg" width="700px" height="600px" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="images/train-to-busan.jpg" width="700px" height="600px" class="d-block w-100" alt="...">
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </a>
+    </div>
+    </div>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="container py-3 my-2" style="background:#d4e6e6">
+        <div class="row">
+            <div class="col-xs-6 col-md-4">
+
+                <h5>Parasite</h5>
+                <h6>“If not now, when?”</h6>
+                    <p>The struggling Kim family sees an opportunity when the son starts working for the wealthy Park family. Soon, all of them
+                    find a way to work within the same household and start living a parasitic life. Parasite is a 2019 South Korean black comedy thriller film directed by Bong Joon-ho, who also co-wrote the screenplay with Han
+                    Jin-won. It stars Song Kang-ho, Lee Sun-kyun, Cho Yeo-jeong, Choi Woo-shik, Park So-dam, Jang Hye-jin, and Lee Jung-eun,
+                    and follows the members of a poor family who scheme to become employed by a wealthy family and infiltrate their
+                    household by posing as unrelated, highly qualified individuals.</p>
+
+            </div>
+            <div class="col-xs-6 col-md-4">
+                <h5>Me before you</h5>
+                <h6>“You only get one life. It's actually your duty to live it as fully as possible.”</h6>
+                    <p>Young and quirky Louisa "Lou" Clark moves from one job to the next to help her family make ends meet.
+                    Her cheerful attitude is put to the test when she becomes a caregiver for Will Traynor, a wealthy young
+                    banker left paralyzed from an accident two years earlier. Will's cynical outlook starts to change when Louisa shows him
+                    that life is worth living. As their bond deepens, their lives and hearts change in ways neither one could have imagined.The central theme of Me Before You is the importance of embracing and appreciating life. Will Traynor no longer sees the
+                    value in his own life, but he encourages Lou Clark to value hers.</p>
+                    <!-- Button modal -->
+                    <div class="d-grid gap-2">
+                    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Sign In
+                    </button>
+                    </div>
+
+            </div>
+
+            <div class="col-xs-6 col-md-4">
+                <h5>Train to Busan</h5>
+                <h6>"Escape from the zombies! Get on board to stay alive!"</h6>
+                <p>A chemical leak at a biotech plant causes the start of a zombie apocalypse that slowly spreads across South Korea. Sok-woo, a father with not much time for his daughter, Soo-ahn, are boarding the KTX, a fast train that shall bring them
+                from Seoul to Busan. But during their journey, the apocalypse begins, and most of the earth's population become flesh
+                craving zombies. While the KTX is shooting towards Busan, the passenger's fight for their families and lives against the
+                zombies - and each other. Train to Busan grossed a total worldwide gross of $98.5 million. It became the highest-grossing Korean film in Malaysia, Hong Kong, and Singapore.</p>
+
+            </div>
+
+        </div>
+</div>
+        
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Sign In</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Email or phone number</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Remeber me</label>
+                            </div>
+                            <button type="submit" class="btn btn-danger">Sign In </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+</body>
+
+</html>
